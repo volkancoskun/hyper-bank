@@ -1,0 +1,6 @@
+1) Logs & Error Handling
+2) Input Validator
+3) Modal mapping
+4) Tests
+5) CircleCI
+6) Maybe docker?
