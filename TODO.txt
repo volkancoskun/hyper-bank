@@ -1,4 +1,4 @@
-1) Logs & Error Handling
+1) Logs & Error Handling - done
 2) Input Validator - done
 3) Tests - done
 4) AWS ECS - FARGATE
