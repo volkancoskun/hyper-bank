@@ -1,7 +1,8 @@
 # Hyper Bank
 
-[![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?branch=master)](https://travis-ci.org/volkancoskun/hyper-bank)
+Master - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?branch=master)](https://travis-ci.org/volkancoskun/hyper-bank)
 
+Develop - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?branch=develop)](https://travis-ci.org/volkancoskun/hyper-bank)
 ### Tech
 
 Hyper Bank uses a number of open source projects to work properly:
