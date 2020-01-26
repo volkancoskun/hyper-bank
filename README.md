@@ -23,6 +23,8 @@ Simple dockerized NodeJS project with tests and CI/CD.
 ├── infra/
 │   └── logging/
 │       └── logger.js
+├── routes/
+│   └── index.js
 ├── logs/
 ├── services/
 │   ├── account.service.js
