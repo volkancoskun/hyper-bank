@@ -8,7 +8,7 @@ Develop - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?bra
 
 ### Production URL
 
-This repo's master branch is connected to AWS CodePipeline with webhooks. You can find production alb URL [here.](http://hyper-bank-lb-1488483883.eu-west-1.elb.amazonaws.com/).
+This repo's master branch is connected to AWS CodePipeline with webhooks. You can find production alb URL [here.](http://hyper-bank-lb-1488483883.eu-west-1.elb.amazonaws.com/api/customer/1).
 
 Also you can find CodePipeline details below.
 
