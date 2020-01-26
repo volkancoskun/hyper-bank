@@ -1,9 +1,17 @@
+const { validationResult } = require('express-validator');
+
 var CustomerService = require('../services/customer.service');
 var AccountService = require('../services/account.service');
 var TransactionService = require('../services/transaction.service');
 
 exports.getCustomer = async function (req, res) {
     try {
+
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(422).json({ status: 422, errors: errors.array() });
+        }
+
         let response = {};
         let customerId = req.params.id;
         let customer = await CustomerService.getCustomer(customerId);
