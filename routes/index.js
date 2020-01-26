@@ -26,6 +26,6 @@ router.get('/customer/:id', CustomerController.getCustomer);
 *
 * @apiSuccess (200) {Object} mixed `Account` object
 */
-router.post('/account/open', AccountController.openAccount);
+router.post('/account', AccountController.openAccount);
 
 module.exports = router;

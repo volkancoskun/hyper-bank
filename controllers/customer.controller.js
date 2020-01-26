@@ -2,7 +2,7 @@ var CustomerService = require('../services/customer.service');
 var AccountService = require('../services/account.service');
 var TransactionService = require('../services/transaction.service');
 
-exports.getCustomer = async function (req, res, next) {
+exports.getCustomer = async function (req, res) {
     try {
         let response = {};
         let customerId = req.params.id;
@@ -19,7 +19,7 @@ exports.getCustomer = async function (req, res, next) {
             account.transactions = transactions.filter(transaction => { return transaction.accountId == account.id });
         });
         response.accounts = accounts;
-        return res.status(200).json({ status: 200, data: response, message: "Succes." });
+        return res.status(200).json({ status: 200, data: response, message: "Success." });
     } catch (e) {
         return res.status(400).json({ status: 400, message: e.message });
     }

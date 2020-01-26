@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "jest",
+    "lint": "eslint {controllers,services,tests}/**/*.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,5 +15,17 @@
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
