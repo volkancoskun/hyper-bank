@@ -21,7 +21,7 @@ router.get('/customer/:id', [
 ], CustomerController.getCustomer);
 
 /**
-* @api {post} /api/account/open Open New Account
+* @api {post} /api/account Open New Account
 * @apiName Open New Account
 * @apiPermission public
 *

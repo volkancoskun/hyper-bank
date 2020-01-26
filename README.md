@@ -9,19 +9,34 @@ Develop - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?bra
 
 Hyper Bank requires [Node.js](https://nodejs.org/) v10.16.0+ to run.
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and start the server.
+
+For development environments...
 
 ```sh
 $ cd hyper-bank
 $ npm install
-$ npm start
+$ NODE_ENV=development npm start
 ```
+Default development port is 3000. 
 
 For production environments...
 
 ```sh
 $ NODE_ENV=production && PORT={PORT} npm start
 ```
+
+### Testing
+
+Jest testing command.
+
+```sh
+NODE_ENV={environment} && PORT={PORT} npm test
+```
+
+### Postman Docs
+
+You can find latest Postman Docs with requests from this [link](https://documenter.getpostman.com/view/7076189/SWT8hfPn?version=latest)
 
 ### Tech
 
