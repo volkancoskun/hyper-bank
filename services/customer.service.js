@@ -1,3 +1,5 @@
+var logger = require('../infra/logging/logger');
+
 var customers = [
     {
         id: 1,
@@ -11,7 +13,7 @@ exports.getCustomer = async function (customerId) {
     try {
         return customers.find(customer => { return customer.id == customerId });
     } catch (e) {
-        // Log Errors
+        logger.error(e);
         throw Error('Error while get customer');
     }
 }
@@ -25,7 +27,7 @@ exports.changeBalance = async function (customerId, amount) {
         } 
         return null;
     } catch (e) {
-        // Log Errors
+        logger.error(e);
         throw Error('Error while change balance');
     }
 }
