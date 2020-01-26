@@ -86,13 +86,22 @@ You can find more details about this step in [buildspec.yml](https://github.com/
 
 #### - Deploy Stage
 
-Hyper bank running on AWS Fargate. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design. (a bit expensive)
+Hyper Bank running on AWS Fargate. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design. (a bit expensive)
+
+Hyper Bank uses Code Deploy to deploy docker containers to ECS. 
 
 ![Deploy](https://user-images.githubusercontent.com/12251312/73137856-a578ed00-406d-11ea-880f-6c5f22d05123.png)
 
 
 ![Service](https://user-images.githubusercontent.com/12251312/73137854-9e51df00-406d-11ea-87d1-617c4d046db3.png)
 
+
+### Future Developments
+
+- In memory database with mongoose?
+- Or using external storages.
+- DI with Awilix
+- Setting alerts from CloudWatch
 
 ### Tech
 
