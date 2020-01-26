@@ -71,7 +71,7 @@ Hyper Banks uses CodePipeline for fully managed continuous delivery service.
 
 If any commits to master branch this stage will triggered.
 
-![Source](https://pasteboard.co/IRLQnnU.png)
+![Source](https://user-images.githubusercontent.com/12251312/73137859-ad389180-406d-11ea-9b23-864f5016b46a.png)
 
 #### - Build Stage 
 
@@ -82,16 +82,16 @@ Steps:
 
 You can find more details about this step in [buildspec.yml](https://github.com/volkancoskun/hyper-bank/blob/master/buildspec.yml)
 
-![Build](https://pasteboard.co/IRLSEHn.png)
+![Build](https://user-images.githubusercontent.com/12251312/73137858-a9a50a80-406d-11ea-91fd-7d1b0d017fb3.png)
 
 #### - Deploy Stage
 
 Hyper bank running on AWS Fargate. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design. (a bit expensive)
 
-![Deploy](https://pasteboard.co/IRLWH2C.png)
+![Deploy](https://user-images.githubusercontent.com/12251312/73137856-a578ed00-406d-11ea-880f-6c5f22d05123.png)
 
 
-![Service](https://pasteboard.co/IRLXzbo.png)
+![Service](https://user-images.githubusercontent.com/12251312/73137854-9e51df00-406d-11ea-87d1-617c4d046db3.png)
 
 
 ### Tech
