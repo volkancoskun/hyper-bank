@@ -3,7 +3,7 @@ node_js:
   - 10.16.0
 env:
   - NODE_ENV=development
-  - NODE_ENV=production PORT=3000  
+  - NODE_ENV=production PORT=80 
 install:
   - npm install   
 
