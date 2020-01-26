@@ -1,21 +1,9 @@
 # Hyper Bank
 
+## Builds
 Master - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?branch=master)](https://travis-ci.org/volkancoskun/hyper-bank)
 
 Develop - [![Build Status](https://travis-ci.org/volkancoskun/hyper-bank.svg?branch=develop)](https://travis-ci.org/volkancoskun/hyper-bank)
-### Tech
-
-Hyper Bank uses a number of open source projects to work properly:
-
-- [Node v10.16.0+](http://nodejs.org/)
-- [Express](https://npmjs.com/package/express)
-- [Log4js](https://www.npmjs.com/package/log4js)
-- [Morgan](https://www.npmjs.com/package/morgan)
-- [Express Validator](https://www.npmjs.com/package/express-validator)
-- [Jest](https://jestjs.io/)
-- [ESLint](https://www.npmjs.com/package/eslint)
-- [Travis CI](https://travis-ci.org)
-
 
 ### Installation
 
@@ -34,6 +22,19 @@ For production environments...
 ```sh
 $ NODE_ENV=production && PORT={PORT} npm start
 ```
+
+### Tech
+
+Hyper Bank uses a number of open source projects to work properly:
+
+- [Node v10.16.0+](http://nodejs.org/)
+- [Express](https://npmjs.com/package/express)
+- [Log4js](https://www.npmjs.com/package/log4js)
+- [Morgan](https://www.npmjs.com/package/morgan)
+- [Express Validator](https://www.npmjs.com/package/express-validator)
+- [Jest](https://jestjs.io/)
+- [ESLint](https://www.npmjs.com/package/eslint)
+- [Travis CI](https://travis-ci.org)
 
 License
 ----
