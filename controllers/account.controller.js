@@ -1,5 +1,7 @@
 var uuidv1 = require('uuid/v1');
 const { validationResult } = require('express-validator');
+var logger = require('../infra/logging/logger');
+
 
 var AccountService = require('../services/account.service');
 var TransactionService = require('../services/transaction.service');
@@ -41,6 +43,7 @@ exports.openAccount = async function (req, res) {
         }
         return res.status(201).json({ status: 201, data: response, message: "Success." });
     } catch (e) {
+        logger.error(e);
         return res.status(400).json({ status: 400, message: e.message });
     }
 }

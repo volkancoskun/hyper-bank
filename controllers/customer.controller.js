@@ -1,4 +1,5 @@
 const { validationResult } = require('express-validator');
+var logger = require('../infra/logging/logger');
 
 var CustomerService = require('../services/customer.service');
 var AccountService = require('../services/account.service');
@@ -29,6 +30,7 @@ exports.getCustomer = async function (req, res) {
         response.accounts = accounts;
         return res.status(200).json({ status: 200, data: response, message: "Success." });
     } catch (e) {
+        logger.error(e);
         return res.status(400).json({ status: 400, message: e.message });
     }
 }

@@ -13,7 +13,7 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 $ cd hyper-bank
-$ npm install -d
+$ npm install
 $ npm start
 ```
 

@@ -1,3 +1,4 @@
+var logger = require('../infra/logging/logger');
 var transactions = [];
 
 exports.createTransaction = async function (transaction) {
@@ -5,7 +6,7 @@ exports.createTransaction = async function (transaction) {
         transactions.push(transaction);
         return transaction;
     } catch (e) {
-        // Log Errors
+        logger.error(e);
         throw Error('Error while create transaction');
     }
 }
@@ -14,7 +15,7 @@ exports.getTransactions = async function (customerId) {
     try {
         return transactions.filter(transaction => { return transaction.customerId == customerId });
     } catch (e) {
-        // Log Errors
+        logger.error(e);
         throw Error('Error while get transaction');
     }
 }
