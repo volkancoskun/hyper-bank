@@ -101,8 +101,6 @@ To run docker locally.
 docker run -p <your port>:<container port> -d <your username>/hyper-bank:latest 
 ```
 
-Note: Only tested on Mac. Feel free to contribute for other platforms :)
-
 ## Production URL
 ---
 This repo's master branch is connected to AWS CodePipeline with webhooks. You can find production alb URL [here.](http://hyper-bank-lb-1488483883.eu-west-1.elb.amazonaws.com/api/customer/1).
