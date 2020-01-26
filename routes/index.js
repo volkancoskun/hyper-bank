@@ -1,4 +1,5 @@
 var express = require('express');
+const { check } = require('express-validator');
 
 var router = express.Router();
 
@@ -14,7 +15,10 @@ var CustomerController = require('../controllers/customer.controller');
 *
 * @apiSuccess (200) {Object} mixed `Customer` object
 */
-router.get('/customer/:id', CustomerController.getCustomer);
+router.get('/customer/:id', [
+  // customerId must be an integer
+  check('id').isInt({ min: 0 })
+], CustomerController.getCustomer);
 
 /**
 * @api {post} /api/account/open Open New Account
@@ -24,8 +28,13 @@ router.get('/customer/:id', CustomerController.getCustomer);
 * @apiParam  {Integer} [id] Customer id
 * @apiParam  {Double} [initialCredit] Initial credit of account
 *
-* @apiSuccess (200) {Object} mixed `Account` object
+* @apiSuccess (201) {Object} mixed `Account` object
 */
-router.post('/account', AccountController.openAccount);
+router.post('/account', [
+  // customerId must be an integer
+  check('customerId').isInt({ min: 0 }),
+  // initialCredit must be a float
+  check('initialCredit').isFloat({ min: 0 })
+], AccountController.openAccount);
 
 module.exports = router;

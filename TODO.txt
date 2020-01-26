@@ -1,6 +1,5 @@
 1) Logs & Error Handling
-2) Input Validator
-3) Modal mapping
-4) Tests
-5) CircleCI
-6) Maybe docker?
+2) Input Validator - done
+3) Tests - done
+4) AWS ECS - FARGATE
+5) Swagger? 
