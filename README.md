@@ -101,7 +101,7 @@ Hyper Bank uses Code Deploy to deploy docker containers to ECS.
 - In memory database with mongoose?
 - Or using external storages.
 - DI with Awilix
-- Setting alerts from CloudWatch
+- Error notifications for the container running on AWS ECS Fargate, using AWS CloudWatch and AWS SNS
 
 ### Tech
 
