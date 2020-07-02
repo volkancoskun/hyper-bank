@@ -159,7 +159,7 @@ WARNING: not automated. Pipeline is created manually for simplicity & brevity.
 - AWS CloudFormation Templates for CD part of the pipeline
 - DI with Awilix
 - Error notifications for the container running on AWS ECS Fargate, using AWS CloudWatch and AWS SNS
-- Create a Cloudformation template for creating CodePipeline
+- Security Improvements
 
 
 ## Tech
