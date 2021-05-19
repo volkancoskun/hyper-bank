@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run test && npm run lint && node ./bin/www",
-    "test": "jest",
+    "test": "jest tests/*.js",
     "lint": "eslint {config,controllers,routes,services,tests,infra}/**/*.js"
   },
   "dependencies": {

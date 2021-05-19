@@ -1,0 +1,12 @@
+const path = require('path');
+const logPath = path.join(__dirname, '../../logs/test.log');
+
+module.exports = {
+  web: {
+    port: 3000
+  },
+  logging: {
+    appenders: { cheese: { type: 'file', filename: logPath} },
+    categories: { default: { appenders: ['cheese'], level: 'error' } }
+  }
+};
