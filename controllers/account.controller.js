@@ -1,4 +1,4 @@
-var uuidv1 = require('uuid/v1');
+const { v1: uuidv1 } = require('uuid');
 const { validationResult } = require('express-validator');
 var logger = require('../infra/logging/logger');
 
