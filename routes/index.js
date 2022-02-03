@@ -1,10 +1,10 @@
-var express = require('express');
-const { check } = require('express-validator');
+const express = require('express')
+const { check } = require('express-validator')
 
-var router = express.Router();
+const router = express.Router()
 
-var AccountController = require('../controllers/account.controller');
-var CustomerController = require('../controllers/customer.controller');
+const AccountController = require('../controllers/account.controller')
+const CustomerController = require('../controllers/customer.controller')
 
 /**
 * @api {get} /api/customer/:id Get Customer Information
@@ -18,7 +18,7 @@ var CustomerController = require('../controllers/customer.controller');
 router.get('/customer/:id', [
   // customerId must be an integer
   check('id').isInt({ min: 0 })
-], CustomerController.getCustomer);
+], CustomerController.getCustomer)
 
 /**
 * @api {post} /api/account Open New Account
@@ -35,6 +35,6 @@ router.post('/account', [
   check('customerId').isInt({ min: 0 }),
   // initialCredit must be a float
   check('initialCredit').isFloat({ min: 0 })
-], AccountController.openAccount);
+], AccountController.openAccount)
 
-module.exports = router;
+module.exports = router
